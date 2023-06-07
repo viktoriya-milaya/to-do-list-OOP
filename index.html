@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <main class="wrap bg-dark text-white">
+        <h2 class="heading">To Do List</h2>
+        <div class="head">
+            <input type="text" class="newtask" placeholder="Need to do...">
+            <button class="button button-push">Add</button>
+        </div>
+        <ul class="task-list">
+            <li class="task-list__item" id="pattern1">
+                <div class="createtask">
+                    <label class="task"><input class="task-list__input" type="checkbox" disabled>
+                        <span class="task-list__checkbox"></span>
+                        Yuor task...
+                    </label>
+                </div>
+                <button class="button-delete">×</button>
+            </li>
+            <li class="task-list__item" id="pattern2">
+                <div class="createtask">
+                    <label class="task  task_check"><input class="task-list__input" type="checkbox" checked disabled>
+                        <span class="task-list__checkbox"></span>
+                        Task completed
+                    </label>
+                </div>
+                <button class="button-delete">×</button>
+            </li>
+
+        </ul>
+        <button class="button button-clear">Clear list</button>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
